@@ -11,10 +11,9 @@ public class StatsService {
 
 
     public int calculateMiddleSum(int[] values) {
-        int sum = calculateSum(values);
         int middleSum = 0;
         for (int value : values) {
-            middleSum = sum / values.length;
+            middleSum = calculateSum(values) / values.length;
         }
 
         return middleSum;
